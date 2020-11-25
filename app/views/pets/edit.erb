@@ -13,8 +13,13 @@
 
   <br></br>
 
+<<<<<<< HEAD
   <%@owners.each do |owner|%>
     <input type="radio" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.id%>" <%='checked' if @pet.owner.name == owner.name %>><%=owner.name%></input>
+=======
+  <%Owner.all.each do |owner|%>
+    <input type="radio" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.name%>" <%='checked' if @pet.owner.name == owner.name %>><%=owner.name%></input>
+>>>>>>> 8a86eaa273572f29000ab1e921ed0ce2b04d196e
   <%end%>
 
   <br></br>
